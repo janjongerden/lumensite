@@ -1,0 +1,20 @@
+.kopje {
+	background-color: green;
+	font-size: 40px;
+	text-align: center;
+}
+.tijd {
+        Xbackground-color: blue;
+	font-size: 70px;
+	color: green;
+	width: 20%;
+	min-width: 200px;
+	height: 100%;
+	display:inline-block;
+}
+.omschrijving {
+        Xbackground-color: red;
+	width: 70%;
+	display:inline-block;
+
+}

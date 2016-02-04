@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Films Lumen</title>
+  <meta name="description" content="Filmoverzicht Filmhuis Lumen">
+  <meta name="author" content="SitePoint">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script type="text/javascript" src="angular.js"></script>
+ 
+  <link rel="stylesheet" href="lumen.css">
+</head>
+
+<body>
+	<header class="kopje">
+		VANDAAG
+	</header>
+	<article class="film">
+		<aside class="tijd">13:30</aside>
+		<section class="omschrijving">
+			<h1>The Lobster</h1>
+			<p><em>The Lobster</em> is een licht absurdistische film met een ernstige ondertoon en een melancholisch randje.Hij toont een originele zoektocht naar de vraag wat de betekenis van ideologieën feitelijk is en of wij uiteindelijk niet beter af zouden zijn zonder.</p>
+		</section>
+	</article>
+<div ng-controller="AppCtrl">
+		            <div ng-repeat="i in movies">
+                <div>- {{i.title}}</div>
+                </div>
+</div>
+
+
+</body>
+</html>
