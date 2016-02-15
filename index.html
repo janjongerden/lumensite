@@ -24,9 +24,15 @@
 		</section>
 	</article>
 <div ng-controller="AppCtrl">
-		            <div ng-repeat="i in movies">
-                <div>- {{i.title}}</div>
-                </div>
+    <div ng-repeat="screening in screenings|filter:{date:'19-02-2016'}|orderBy: 'time'">
+	<article class="film">
+		<aside class="tijd">{{screening.time}}</aside>
+		<section class="omschrijving">
+			<h2>{{screening.title}}</h2>
+			<p>{{screening.shortDescription}}</p>
+		</section>
+	</article>
+    </div>
 </div>
 
 
