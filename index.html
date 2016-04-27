@@ -16,8 +16,8 @@
 	<header class="kopje">
 		VANDAAG
 	</header>
-<div ng-controller="AppCtrl">
-    <div ng-repeat="screening in screenings|datefilter:0|orderBy: 'time'">
+<div data-ng-controller="AppCtrl">
+    <div data-ng-repeat="screening in screenings|datefilter:0|orderBy: 'time'">
 	<article class="film">
 		<aside class="tijd">{{screening.time}}</aside>
 		<section class="omschrijving">
